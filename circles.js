@@ -8,9 +8,9 @@ const prompt = require("prompt-sync")();
 
 const PI = 3.14163;
 
-const radius = prompt("Enter the Radius: ");
-const perimeter = Math.round(2 * PI * radius);
-const area = Math.round(PI * radius * radius);
+const radius = parseInt(prompt("Enter the Radius: "));
+const perimeter = parseFloat(2 * PI * radius).toFixed(2);
+const area = parseFloat(PI * radius * radius).toFixed(2);
 
 console.log("Perimeter: " + perimeter);
 console.log("Area: " + area);

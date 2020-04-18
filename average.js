@@ -2,13 +2,38 @@
 
 const prompt = require("prompt-sync")();
 
-const firstNote = parseInt(prompt("First Note: "));
+let firstNote;
+let secundNote;
+let thirdaNota;
+let fourthNota;
 
-const secundNote = parseInt(prompt("Secund Note: "));
+do {
+  firstNote = parseInt(prompt("First Note: "));
+  if (isNaN(firstNote)) {
+    console.log("invalid number");
+  }
+} while (isNaN(firstNote));
 
-const thirdaNota = parseInt(prompt("Third Note: "));
+do {
+  secundNote = parseInt(prompt("Secund Note: "));
+  if (isNaN(secundNote)) {
+    console.log("invalid number");
+  }
+} while (isNaN(secundNote));
 
-const fourthNota = parseInt(prompt("Fourth Note: "));
+do {
+  thirdaNota = parseInt(prompt("Third Note: "));
+  if (isNaN(thirdaNota)) {
+    console.log("invalid number");
+  }
+} while (isNaN(thirdaNota));
+
+do {
+  fourthNota = parseInt(prompt("Fourth Note: "));
+  if (isNaN(fourthNota)) {
+    console.log("invalid number");
+  }
+} while (isNaN(fourthNota));
 
 const sumaNotas = firstNote + secundNote + thirdaNota + fourthNota;
 

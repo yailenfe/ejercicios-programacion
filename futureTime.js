@@ -22,11 +22,11 @@ do {
     console.log("Error: Enter a valid number!");
   }
   if (number < 0) {
-    console.log("Error: negative numbers are not allowed!");
+    console.log("Error: Negative numbers are not allowed!");
   }
 } while (isNaN(number) || number < 0);
 
 const horaMarcadaReloj = (currentHour + number) % 24;
 console.log(
-  "In " + number + " hour, " + "the clock will mark the " + horaMarcadaReloj
+  "In " + number + " hour, the clock will mark the " + horaMarcadaReloj
 );

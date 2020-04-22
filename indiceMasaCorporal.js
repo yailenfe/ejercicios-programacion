@@ -37,7 +37,7 @@ do {
 const IMC = weighs / (height * height);
 
 if (age < 45 && IMC < 22.0) {
-  console.log("his condition is underweight");
+  console.log("his condition is under weight");
 } else if (age < 45 && IMC >= 22.0) {
   console.log("his condition is medium");
 } else if (age < 45 && IMC >= 22.0) {

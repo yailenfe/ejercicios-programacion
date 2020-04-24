@@ -14,4 +14,4 @@ for (let i = 0; i < number; i++) {
   const num = Number(prompt("Enter a number: "));
   ordenumero.push(num);
 }
-console.log("el numero es " + Math.max( ...ordenumero));
+console.log("The number is" + Math.max( ...ordenumero));

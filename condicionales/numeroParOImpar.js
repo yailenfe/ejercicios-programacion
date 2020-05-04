@@ -4,8 +4,8 @@ const prompt = require("prompt-sync")();
 let numberEven;
 let numberOdd;
 
-numberEven = Number(prompt("Enter a number Even: "));
-numberOdd = Number(prompt("Enter a number Odd: "));
+numberEven = Number(prompt("Enter a Even number: "));
+numberOdd = Number(prompt("Enter a Odd number: "));
 
 if (numberEven % 2 === 0 && numberOdd % 2 != 0) {
       console.log("Thank you for your cooperation!");

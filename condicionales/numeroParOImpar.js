@@ -4,8 +4,8 @@ const prompt = require("prompt-sync")();
 let numberEven;
 let numberOdd;
 
-numberEven = parseInt(prompt("Enter a number Pair: "));
-numberOdd = parseInt(prompt("Enter a number Odd: "));
+numberEven = Number(prompt("Enter a number Pair: "));
+numberOdd = Number(prompt("Enter a number Odd: "));
 
 if (numberEven % 2 === 0 && numberOdd % 2 != 0) {
       console.log("Thank you for your cooperation!");

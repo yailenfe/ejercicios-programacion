@@ -5,7 +5,7 @@ let numberEven;
 let numberOdd;
 
 do {
-      numberEven = parseInt(prompt("Enter a number Pair: "));
+      numberEven = Number(prompt("Enter a number Pair: "));
 
       if (numberEven % 2 != 0) {
             console.log(`Error: not write number pair`);
@@ -13,7 +13,7 @@ do {
       }
 } while (numberEven % 2 != 0);
 do {
-      numberOdd = parseInt(prompt(`Enter a number Odd:`));
+      numberOdd = Number(prompt(`Enter a number Odd:`));
 
       if (numberOdd % 2 === 0) {
             console.log(`Error: write a number Odd`);

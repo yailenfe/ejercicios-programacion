@@ -1,9 +1,7 @@
 const prompt = require("prompt-sync")();
-let dividendNumber;
-let dividerNumber;
 
-dividendNumber = Number(prompt("Enter a divident: "));
-dividerNumber = Number(prompt("Enter a divider: "));
+const dividendNumber = Number(prompt("Enter a divident: "));
+const dividerNumber = Number(prompt("Enter a divider: "));
 
 const rest = dividendNumber % dividerNumber;
 const quotient = parseInt(dividendNumber / dividerNumber);

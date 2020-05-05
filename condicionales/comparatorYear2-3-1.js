@@ -8,13 +8,15 @@ let differenceYear = Math.abs(actualYear - secondYear);
 
 if (actualYear < secondYear && differenceYear === 1) {
 	console.log(`To reach year ${secondYear} lack ${differenceYear} year`);
+} else if (actualYear > secondYear && differenceYear === 1) {
+	console.log(`from the year ${secondYear} to past ${differenceYear} year`);
 } else if (actualYear < secondYear) {
 	console.log(
 		`To get to the year ${secondYear} missing ${differenceYear} years`
 	);
 } else if (actualYear > secondYear) {
 	console.log(
-		`since the year ${secondYear} has passed ${differenceYear} years`
+		`Since the year ${secondYear} has passed ${differenceYear} years`
 	);
 } else if (actualYear === secondYear) {
 	console.log("They are the same year");

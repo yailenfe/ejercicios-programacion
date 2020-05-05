@@ -10,12 +10,13 @@ oddNumber = Number(prompt("Enter a odd number: "));
 if (evenNumber % 2 !== 0) {
 	console.log(`You have not written an even number`);
 }
+
 if (oddNumber % 2 === 0) {
-	console.log(`you have not written an odd number`);
-} else if (evenNumber % 2 !== 0 && oddNumber % 2 === 0) {
-	console.log(`You have not written an even number`);
-	console.log(`you have not written an odd number`);
-	console.log(`Please run the program again to try again`);
-} else if (evenNumber % 2 === 0 && oddNumber % 2 !== 0) {
-	console.log("Thank you for your cooperation!");
+	console.log(`You have not written an odd number`);
+}
+
+if (evenNumber % 2 === 0 && oddNumber % 2 !== 0) {
+	console.log(`Thank you for your cooperation`);
+} else {
+	console.log(`Run a new program to try`);
 }

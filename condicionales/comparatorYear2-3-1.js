@@ -1,19 +1,21 @@
 // Mejore el programa anterior haciendo que cuando la diferencia sea exactamente un año, escriba la frase en singular:
 const prompt = require("prompt-sync")();
 
-const actulYear = Number(prompt("Enter the actul year: "));
-const secundYear = Number(prompt("Enter the second year: "));
+const actualYear = Number(prompt("Enter the actual year: "));
+const secondYear = Number(prompt("Enter the second year: "));
 
-let difenciaYear = Math.abs(actulYear - secundYear);
+let differenceYear = Math.abs(actualYear - secondYear);
 
-if (actulYear < secundYear && difenciaYear === 1) {
-	console.log(`To reach year ${secundYear} lack ${difenciaYear} year`);
-} else if (actulYear < secundYear) {
+if (actualYear < secondYear && differenceYear === 1) {
+	console.log(`To reach year ${secondYear} lack ${differenceYear} year`);
+} else if (actualYear < secondYear) {
 	console.log(
-		`To get to the year ${secundYear} missing ${difenciaYear} yaer`
+		`To get to the year ${secondYear} missing ${differenceYear} years`
 	);
-} else if (actulYear > secundYear) {
-	console.log(`since the year ${secundYear} has passed ${difenciaYear} year`);
-} else if (actulYear === secundYear) {
+} else if (actualYear > secondYear) {
+	console.log(
+		`since the year ${secondYear} has passed ${differenceYear} years`
+	);
+} else if (actualYear === secondYear) {
 	console.log("They are the same year");
 }

@@ -8,15 +8,15 @@ evenNumber = Number(prompt("Enter a even number: "));
 oddNumber = Number(prompt("Enter a odd number: "));
 
 if (evenNumber % 2 !== 0) {
-	console.log(`You have not written an even number`);
+	console.log("You have not written an even number");
 }
 
 if (oddNumber % 2 === 0) {
-	console.log(`You have not written an odd number`);
+	console.log("You have not written an odd number");
 }
 
 if (evenNumber % 2 === 0 && oddNumber % 2 !== 0) {
-	console.log(`Thank you for your cooperation`);
+	console.log("Thank you for your cooperation");
 } else {
-	console.log(`Run a new program to try`);
+	console.log("Run a new program to try");
 }

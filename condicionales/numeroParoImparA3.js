@@ -4,8 +4,8 @@ const prompt = require("prompt-sync")();
 let evenNumber;
 let oddNumber;
 
-evenNumber = Number(prompt("Enter a even number: "));
-oddNumber = Number(prompt("Enter a odd number: "));
+evenNumber = Number(prompt("Enter an even number: "));
+oddNumber = Number(prompt("Enter an odd number: "));
 
 if (evenNumber % 2 !== 0) {
 	console.log("You have not written an even number");

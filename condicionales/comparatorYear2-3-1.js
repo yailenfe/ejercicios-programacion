@@ -7,9 +7,13 @@ const secondYear = Number(prompt("Enter the second year: "));
 let differenceYear = Math.abs(actualYear - secondYear);
 
 if (actualYear < secondYear && differenceYear === 1) {
-	console.log(`To reach year ${secondYear} lack ${differenceYear} year`);
+	console.log(
+		`To get to the year ${secondYear} missing ${differenceYear} year`
+	);
 } else if (actualYear > secondYear && differenceYear === 1) {
-	console.log(`from the year ${secondYear} to past ${differenceYear} year`);
+	console.log(
+		`Since the year ${secondYear} has passed ${differenceYear} year`
+	);
 } else if (actualYear < secondYear) {
 	console.log(
 		`To get to the year ${secondYear} missing ${differenceYear} years`

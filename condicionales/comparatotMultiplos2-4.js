@@ -6,14 +6,14 @@ const secondNumber = Number(prompt("Enter a  second number: "));
 
 if (firstNumber > secondNumber) {
 	if (firstNumber % secondNumber === 0) {
-		console.log(`${firstNumber} is multiple the ${secondNumber}`);
+		console.log(`${firstNumber} is multiple of ${secondNumber}`);
 	} else {
-		console.log(`${firstNumber} is not multiple the ${secondNumber}`);
+		console.log(`${firstNumber} is not multiple of ${secondNumber}`);
 	}
 } else {
 	if (secondNumber % firstNumber === 0) {
-		console.log(`${secondNumber} is multiple the ${firstNumber}`);
+		console.log(`${secondNumber} is multiple of ${firstNumber}`);
 	} else {
-		console.log(`${secondNumber} not is multiple the ${firstNumber}`);
+		console.log(`${secondNumber} not is multiple of ${firstNumber}`);
 	}
 }

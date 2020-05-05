@@ -2,13 +2,13 @@
 
 const prompt = require("prompt-sync")();
 
-const FirstNumber = Number(prompt("Enter a first number: "));
-const SecondNumber = Number(prompt("Enter a  second number: "));
+const firstNumber = Number(prompt("Enter a first number: "));
+const secondNumber = Number(prompt("Enter a  second number: "));
 
-if (FirstNumber > SecondNumber) {
-	console.log(`Minor: ${SecondNumber} ; Greater: ${FirstNumber}`);
-} else if (FirstNumber < SecondNumber) {
-	console.log(`Minor: ${FirstNumber} ; Greater: ${SecondNumber}`);
+if (firstNumber > secondNumber) {
+	console.log(`Minor: ${secondNumber} ; Greater: ${firstNumber}`);
+} else if (firstNumber < secondNumber) {
+	console.log(`Minor: ${firstNumber} ; Greater: ${secondNumber}`);
 } else {
 	console.log("The two numbers are equal");
 }

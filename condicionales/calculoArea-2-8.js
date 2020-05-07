@@ -10,20 +10,16 @@ const figureChoosen = prompt(
 	"Which figure do you want to calculate (Write T or C)?"
 );
 
-let base;
-let height;
-const PI = 3.141592;
-let radius;
-
-if (figureChoosen === "T" || figureChoosen === "t") {
-	base = Number(prompt("Write the base:"));
-	height = Number(prompt("Write the height:"));
+if (figureChoosen.toLowerCase() === "t") {
+	let base = Number(prompt("Write the base:"));
+	let height = Number(prompt("Write the height:"));
 	const areaTriangle = (base * height) / 2;
 	console.log(
 		`A base triangle ${base} and height ${height} it has an area of ${areaTriangle}`
 	);
-} else if (figureChoosen === "C " || figureChoosen === "c") {
-	radius = Number(prompt("Write the radius:"));
+} else if (figureChoosen.toLowerCase() === "c") {
+	let radius = Number(prompt("Write the radius:"));
+	const PI = 3.141592;
 	const areaCircle = PI * (radius * radius);
 	console.log(`A circle of radius ${radius}it has an area of ${areaCircle}`);
 }

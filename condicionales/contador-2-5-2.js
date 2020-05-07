@@ -2,15 +2,15 @@
 const prompt = require("prompt-sync")();
 
 let numberList = [];
-let contadorNumber = 0;
+let accountantNumber = 0;
 const quantityNumber = Number(prompt("Enter the quantity number: "));
 
 for (let i = 0; i < quantityNumber; i++) {
 	const number = prompt(`Enter the number ${i + 1}: `);
 
 	if (numberList.includes(number)) {
-		contadorNumber++;
+		accountantNumber++;
 	}
 	numberList.push(number);
 }
-console.log(`The quantity numbers that are repeated is ${contadorNumber}`);
+console.log(`Numbers were repeated ${accountantNumber} times `);

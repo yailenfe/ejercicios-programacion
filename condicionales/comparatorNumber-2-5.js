@@ -12,15 +12,11 @@ if (
 ) {
 	console.log("You have written the same number three times.");
 } else if (
-	(firstNumber === secondNumber && secondNumber === firstNumber) ||
-	(firstNumber === thirdNumber && thirdNumber === firstNumber) ||
-	(secondNumber === thirdNumber && thirdNumber === secondNumber)
+	firstNumber === secondNumber ||
+	firstNumber === thirdNumber ||
+	secondNumber === thirdNumber
 ) {
 	console.log("You have written one of the numbers twice.");
-} else if (
-	firstNumber != secondNumber &&
-	secondNumber != thirdNumber &&
-	thirdNumber != firstNumber
-) {
+} else {
 	console.log("The three numbers he has written are different.");
 }

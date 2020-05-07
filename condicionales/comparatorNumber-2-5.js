@@ -5,11 +5,7 @@ const firstNumber = Number(prompt("Enter a first number: "));
 const secondNumber = Number(prompt("Enter a  second number: "));
 const thirdNumber = Number(prompt("Enter a  third number: "));
 
-if (
-	firstNumber === secondNumber &&
-	secondNumber === thirdNumber &&
-	thirdNumber === firstNumber
-) {
+if (firstNumber === secondNumber && secondNumber === thirdNumber) {
 	console.log("You have written the same number three times.");
 } else if (
 	firstNumber === secondNumber ||

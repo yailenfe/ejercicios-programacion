@@ -4,7 +4,7 @@ const number = prompt("Enter a  number centimetres : ");
 let kilometres = Math.floor(number / 100000);
 let restKilometres = number % 100000;
 let meter = Math.floor(restKilometres / 100);
-let restMeter = restKm % 100;
+let restMeter = restKilometres % 100;
 let centimeter = restMeter;
 
 if (number <= 0) {

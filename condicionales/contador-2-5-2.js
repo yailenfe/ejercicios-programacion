@@ -6,7 +6,7 @@ let contadorNumber = 0;
 const quantityNumber = Number(prompt("Enter the quantity number: "));
 
 for (let i = 0; i < quantityNumber; i++) {
-	const number = prompt(`enter the number ${i + 1}: `);
+	const number = prompt(`Enter the number ${i + 1}: `);
 
 	if (numberList.includes(number)) {
 		contadorNumber++;

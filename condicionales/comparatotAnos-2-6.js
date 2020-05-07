@@ -1,8 +1,7 @@
 // Escriba un programa que pida un año y que escriba si es bisiesto o no.Se recuerda que los años bisiestos son múltiplos de 4, pero los múltiplos de 100 no lo son, aunque los múltiplos de 400 sí.
-const prompt = require('prompt-sync')();
-let year;
+const prompt = require("prompt-sync")();
 
-year = Number(prompt('Write a year and I will tell you if it is leap: '));
+const year = Number(prompt("Write a year and I will tell you if it is leap: "));
 if (year % 400 === 0) {
 	console.log(
 		`The year ${year} is a leap year because it is a multiple of 400.`

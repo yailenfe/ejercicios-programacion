@@ -7,10 +7,10 @@ const playerB = getRandomNumber();
 
 console.log(`${namePlayer1} has taken ${playerA}`);
 console.log(`${namePlayer2} has taken ${playerB}`);
-let messager = "has won";
+let messager = "Has won";
 
 if (playerA > 6 || playerB > 6) {
-	console.log("player no valid!");
+	console.log("Player no valid!");
 } else if (playerA === playerB) {
 	console.log("They have tied.");
 } else if (playerA > playerB) {

@@ -13,10 +13,10 @@ if (amountOfValues < 0) {
 			anterior = Number(prompt("Write a number: "));
 		} else {
 			let valor = Number(
-				prompt(`  Write a number greater than ${anterior} :  `)
+				prompt(`Write a number greater than ${anterior}: `)
 			);
 			if (valor <= anterior) {
-				console.log(` !${valor} not is greater than ${anterior} `);
+				console.log(`!${valor} not is greater than ${anterior}`);
 			}
 			anterior = valor;
 		}

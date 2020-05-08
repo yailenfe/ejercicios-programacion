@@ -16,14 +16,12 @@ if (Math.max(playerA1, playerA2) > Math.max(playerB1, playerB2)) {
 	console.log(`Has won ${namePlayerA}`);
 } else if (Math.max(playerA1, playerA2) < Math.max(playerB1, playerB2)) {
 	console.log(`Has won ${namePlayerB}`);
-} else if (Math.max(playerA1, playerA2) === Math.max(playerB1, playerB2)) {
-	if (Math.min(playerA1, playerA2) > Math.min(playerB1, playerB2)) {
-		console.log(`Has won ${namePlayerA}`);
-	} else if (Math.min(playerA1, playerA2) < Math.min(playerB1, playerB2)) {
-		console.log(`Has won ${namePlayerB}`);
-	} else {
-		console.log("they are tied");
-	}
+} else if (Math.min(playerA1, playerA2) > Math.min(playerB1, playerB2)) {
+	console.log(`Has won ${namePlayerA}`);
+} else if (Math.min(playerA1, playerA2) < Math.min(playerB1, playerB2)) {
+	console.log(`Has won ${namePlayerB}`);
+} else {
+	console.log("they are tied");
 }
 
 function getRandomDice() {

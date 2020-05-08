@@ -9,7 +9,7 @@ if (secondNumber < firtsNumber) {
 	console.log(
 		`I have asked you for an integer greater than or equal to ${firtsNumber}`
 	);
-} else if (secondNumber >= firtsNumber) {
+} else {
 	for (let i = firtsNumber; i <= secondNumber; i++) {
 		if (i % 2 == 0) {
 			console.log(`The number ${i} is even`);

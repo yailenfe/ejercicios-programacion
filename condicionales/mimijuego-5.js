@@ -9,33 +9,37 @@
 // El jugador que ha sacado Papel gana al jugador que ha sacado Piedra.
 
 const prompt = require("prompt-sync")();
-let namePlayer1 = prompt("Write you name: ");
-let namePlayer2 = prompt("Write you name: ");
+const OPTION_ROCK = "✊";
+const OPTION_PAIPER = "✋";
+const OPTION_SCISSORS = "✌️";
+
+const namePlayerA = prompt("Write you name: ");
+const namePlayerB = prompt("Write you name: ");
 
 const playerA = getRanomValue();
 const playerB = getRanomValue();
 
-console.log(`${namePlayer1} has taken ${playerA}`);
-console.log(`${namePlayer2} has taken ${playerB}`);
+console.log(`${namePlayerA} has taken ${playerA}`);
+console.log(`${namePlayerB} has taken ${playerB}`);
 
-if (playerA === "Piedra" && playerB === "Tijera") {
-	console.log(`has won ${namePlayer1}`);
-} else if (playerB === "Piedra" && playerA === "Tijera") {
-	console.log(`has won ${namePlayer2}`);
-} else if (playerA === "Tijera" && playerB === "Papel") {
-	console.log(`has won ${namePlayer1}`);
-} else if (playerB === "Tijera" && playerA === "Papel") {
-	console.log(`has won ${namePlayer2}`);
-} else if (playerA === "Papel" && playerB === "Piedra") {
-	console.log(`has won ${namePlayer1}`);
-} else if (playerB === "Papel" && playerA === "Piedra") {
-	console.log(`has won ${namePlayer2}`);
+if (playerA === OPTION_ROCK && playerB === OPTION_SCISSORS) {
+	console.log(`has won ${namePlayerA}`);
+} else if (playerB === OPTION_ROCK && playerA === OPTION_SCISSORS) {
+	console.log(`has won ${namePlayerB}`);
+} else if (playerA === OPTION_SCISSORS && playerB === OPTION_PAIPER) {
+	console.log(`has won ${namePlayerA}`);
+} else if (playerB === OPTION_SCISSORS && playerA === OPTION_PAIPER) {
+	console.log(`has won ${namePlayerB}`);
+} else if (playerA === OPTION_PAIPER && playerB === OPTION_ROCK) {
+	console.log(`has won ${namePlayerA}`);
+} else if (playerB === OPTION_PAIPER && playerA === OPTION_ROCK) {
+	console.log(`has won ${namePlayerB}`);
 } else if (playerA === playerB) {
 	console.log("Have tied");
 }
 
 function getRanomValue() {
-	const options = ["Piedra", "Papel", "Tijera"];
+	const options = [OPTION_ROCK, OPTION_PAIPER, OPTION_SCISSORS];
 	const randomOption = options[Math.floor(Math.random() * options.length)];
 	return randomOption;
 }
